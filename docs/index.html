@@ -4,21 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seesaw Diary - Balanced AI Diary Service</title>
+    <title>Seesaw - Official Home</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-family: -apple-system, sans-serif;
             line-height: 1.6;
             color: #333;
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
             background-color: #fcfcf9;
-        }
-
-        header {
             text-align: center;
-            padding: 40px 0;
         }
 
         img.logo {
@@ -30,130 +26,44 @@
 
         h1 {
             color: #ff8a80;
-            margin-top: 20px;
+            margin: 20px 0;
         }
 
-        section {
+        .content {
             background: white;
             padding: 30px;
             border-radius: 15px;
-            margin-bottom: 20px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
         }
 
-        h2 {
-            border-bottom: 2px solid #ff8a80;
-            padding-bottom: 10px;
-            color: #444;
-        }
-
-        nav {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        nav a {
+        footer a {
             margin: 0 15px;
             color: #666;
             text-decoration: none;
             font-weight: bold;
         }
 
-        footer {
-            text-align: center;
-            font-size: 0.8em;
-            color: #999;
-            margin-top: 50px;
-        }
-
-        .highlight {
+        footer a:hover {
             color: #ff8a80;
-            font-weight: bold;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
         }
     </style>
 </head>
 
 <body>
-
-    <header>
-        <img src="app_icon.jpg" alt="Seesaw Diary Logo" class="logo">
-        <h1>Seesaw Diary</h1>
-        <p>Capture your day and find balance with AI-driven insights.</p>
-    </header>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#privacy">Privacy Policy</a>
-        <a href="#terms">Terms of Service</a>
-    </nav>
-
-    <section id="about">
-        <h2>About Seesaw Diary</h2>
-        <p>Seesaw Diary is a specialized diary application that provides deep insights and warm counseling comments
-            based on
-            your daily records using advanced Google Gemini AI models.</p>
-        <ul>
-            <li><strong>Per-User Quota:</strong> We utilize your own Google account's free/personal quota for a
-                cost-effective AI experience.</li>
-            <li><strong>Local-First:</strong> Your diary entries are stored securely on your local device using SQLite.
-            </li>
-        </ul>
-    </section>
-
-    <section id="privacy">
-        <h2>Privacy Policy</h2>
-        <p>This Privacy Policy explains how <strong>Seesaw Diary</strong> ("the App") handles your data.</p>
-
-        <h3>1. Data Collection and Usage</h3>
-        <p>The App <span class="highlight">does not store or transmit</span> your diary content to any external servers
-            or third-party databases. All diary entries are stored exclusively within your device's local storage
-            (SQLite).</p>
-
-        <h3>2. Google API Data Usage</h3>
-        <p>To provide AI features, the App requests your authorization to access the following Google API Scopes:</p>
-        <ul>
-            <li><code>.../auth/generative-language.peruserquota</code>: To access the Gemini model using your own
-                personal quota.</li>
-            <li><code>.../auth/generative-language.tuning.readonly</code>: Required for 2026-standard model invocation
-                and personalized response generation.</li>
-        </ul>
-        <p>Data accessed through these scopes is used strictly for generating diary comments and is never shared, sold,
-            or used for any other purposes.</p>
-
-        <h3>3. Data Security</h3>
-        <p>Authentication is handled via official Google OAuth protocols. Access tokens are managed securely in-memory
-            and are never permanently stored on external servers.</p>
-    </section>
-
-    <section id="terms">
-        <h2>Terms of Service</h2>
-        <h3>1. Service Description</h3>
-        <p>AI features in this App consume the free or paid quota assigned to your personal Google account. Any service
-            interruptions due to quota exhaustion are governed by Google's policies and are not the responsibility of
-            the App.</p>
-
-        <h3>2. Limitation of Liability</h3>
-        <p>AI-generated content is for informational and supportive purposes only and does not replace professional
-            legal or medical advice. Users are responsible for backing up their own local diary data.</p>
-
-        <h3>3. Permissions</h3>
-        <p>Users can revoke the App's access to their Google account at any time via their Google Account Security
-            settings.</p>
-    </section>
-
+    <img src="app_icon.jpg" alt="Seesaw Logo" class="logo">
+    <h1>Seesaw</h1>
+    <div class="content">
+        <h2>Balanced AI Diary Service</h2>
+        <p>Seesaw helps you find emotional balance through AI-driven insights. Record your day and receive personalized
+            counseling comments powered by Google Gemini 2.5 Flash.</p>
+    </div>
     <footer>
-        <p>&copy; 2026 Seesaw Diary Developer. All rights reserved.</p>
-        <p>Contact: <a href="mailto:your-email@gmail.com">your-email@gmail.com</a></p>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <p style="margin-top: 30px; font-size: 0.8em; color: #999;">&copy; 2026 Seesaw. Contact: your-email@gmail.com
+        </p>
     </footer>
-
 </body>
 
 </html>
