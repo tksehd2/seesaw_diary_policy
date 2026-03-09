@@ -3,109 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seesaw Diary - Your Private Journal</title>
+    <title>Seesaw - Your Private Journal</title>
     <style>
-        :root {
-            --primary-color: #4A90E2;
-            --text-color: #333333;
-            --bg-color: #F9FAFB;
-        }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: -apple-system, sans-serif;
             line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        header {
-            background-color: white;
-            padding: 2rem 0;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        header h1 {
-            margin: 0;
-            color: var(--primary-color);
-            font-size: 2.5rem;
-        }
-        header p {
-            margin: 0.5rem 0 0;
-            font-size: 1.2rem;
-            color: #666;
-        }
-        main {
-            flex: 1;
+            color: #333;
             max-width: 800px;
-            margin: 3rem auto;
-            padding: 0 2rem;
+            margin: 0 auto;
+            padding: 40px 20px;
         }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            border-bottom: 2px solid #ff8a80; /* 코랄 핑크 테마 */
+            padding-bottom: 10px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #666;
+            margin-top: 0;
+            font-size: 1.1em;
+        }
+
+        h2 {
+            color: #444;
+            margin-top: 30px;
+        }
+
         .feature-box {
-            background: white;
-            padding: 2rem;
+            background: #fafafa;
+            padding: 25px;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            margin-bottom: 2rem;
+            border: 1px solid #eee;
+            margin-bottom: 25px;
         }
+
         .feature-box h2 {
             margin-top: 0;
-            color: var(--primary-color);
         }
+
         .feature-list {
             padding-left: 20px;
         }
+
         .feature-list li {
-            margin-bottom: 1rem;
+            margin-bottom: 12px;
         }
+
         footer {
-            background-color: #333;
-            color: white;
+            margin-top: 60px;
             text-align: center;
-            padding: 2rem 0;
-            margin-top: auto;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
         }
+
         footer a {
-            color: #4A90E2;
+            color: #ff8a80;
             text-decoration: none;
-            margin: 0 10px;
+            font-weight: bold;
+            margin: 0 15px;
         }
-        footer a:hover {
-            text-decoration: underline;
+
+        footer p.copyright {
+            color: #999;
+            margin-top: 20px;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Seesaw Diary</h1>
-        <p>Your thoughts, securely synced to your own space.</p>
+        <h1>Seesaw</h1>
+        <p>Your thoughts, securely kept on your local device and safely backed up.</p>
     </header>
 
     <main>
         <div class="feature-box">
-            <h2>Welcome to Seesaw Diary</h2>
-            <p>Seesaw Diary is a minimalist, secure journaling application designed to give you a peaceful space for your thoughts. We believe that your private entries should remain truly private.</p>
+            <h2>Welcome to Seesaw</h2>
+            <p>Seesaw is a "Local-First" minimalist journaling application designed to give you a peaceful space for your thoughts. Your data is stored locally and backed up securely to your own personal cloud.</p>
         </div>
 
         <div class="feature-box">
-            <h2>Why choose Seesaw Diary?</h2>
+            <h2>Why choose Seesaw?</h2>
             <ul class="feature-list">
-                <li><strong>Direct Google Drive Sync:</strong> Your diary entries are saved directly to your personal Google Drive. We do not store your private thoughts on our servers.</li>
-                <li><strong>Complete Privacy:</strong> Because data is stored in your own Google account, you maintain 100% control and ownership of your data at all times.</li>
-                <li><strong>Seamless Access:</strong> Simply sign in securely with your Google Account and start writing. No extra passwords to remember.</li>
+                <li><strong>Local-First Storage:</strong> Your active diary entries are saved directly to your local device (SQLite). We never transmit your private thoughts to our own external servers.</li>
+                <li><strong>Google Drive Sync:</strong> Your data is securely backed up and synced directly to your personal Google Drive, giving you complete ownership of your backups.</li>
+                <li><strong>Private AI Analysis:</strong> Seesaw securely requests access to your personal Google Gemini API quota to provide smart journal analysis without compromising your data privacy.</li>
+                <li><strong>Complete Control:</strong> Because data is stored locally and backed up to your own Drive, you maintain 100% control of your data and permissions at all times.</li>
             </ul>
         </div>
     </main>
 
     <footer>
         <p>
-            <a href="/privacy.html">Privacy Policy</a> | 
-            <a href="/terms.html">Terms of Service</a>
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms of Service</a>
         </p>
-        <p>&copy; 2026 ToyApps. All rights reserved.</p>
+        <p class="copyright">&copy; 2026 ToyApps. All rights reserved.</p>
     </footer>
 
 </body>
