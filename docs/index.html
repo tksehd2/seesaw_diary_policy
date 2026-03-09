@@ -1,70 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta name="google-site-verification" content="WirycQfhGJGjwuRfDNARU__wlKI40f-V9-luAZI1CzM" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seesaw - Official Home</title>
+    <title>Seesaw Diary - Your Private Journal</title>
     <style>
+        :root {
+            --primary-color: #4A90E2;
+            --text-color: #333333;
+            --bg-color: #F9FAFB;
+        }
         body {
-            font-family: -apple-system, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #fcfcf9;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: white;
+            padding: 2rem 0;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
-
-        img.logo {
-            width: 120px;
-            height: 120px;
-            border-radius: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        header h1 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 2.5rem;
         }
-
-        h1 {
-            color: #ff8a80;
-            margin: 20px 0;
-        }
-
-        .content {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-            margin-bottom: 30px;
-        }
-
-        footer a {
-            margin: 0 15px;
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
             color: #666;
-            text-decoration: none;
-            font-weight: bold;
         }
-
+        main {
+            flex: 1;
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        .feature-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+        .feature-box h2 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        .feature-list {
+            padding-left: 20px;
+        }
+        .feature-list li {
+            margin-bottom: 1rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: auto;
+        }
+        footer a {
+            color: #4A90E2;
+            text-decoration: none;
+            margin: 0 10px;
+        }
         footer a:hover {
-            color: #ff8a80;
+            text-decoration: underline;
         }
     </style>
 </head>
-
 <body>
-    <img src="app_icon.jpg" alt="Seesaw Logo" class="logo">
-    <h1>Seesaw</h1>
-    <div class="content">
-        <h2>Balanced AI Diary Service</h2>
-        <p>Seesaw helps you find emotional balance through AI-driven insights. Record your day and receive personalized
-            counseling comments powered by Google Gemini 2.5 Flash.</p>
-    </div>
-    <footer>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-        <p style="margin-top: 30px; font-size: 0.8em; color: #999;">&copy; 2026 Seesaw. Contact: your-email@gmail.com
-        </p>
-    </footer>
-</body>
 
+    <header>
+        <h1>Seesaw Diary</h1>
+        <p>Your thoughts, securely synced to your own space.</p>
+    </header>
+
+    <main>
+        <div class="feature-box">
+            <h2>Welcome to Seesaw Diary</h2>
+            <p>Seesaw Diary is a minimalist, secure journaling application designed to give you a peaceful space for your thoughts. We believe that your private entries should remain truly private.</p>
+        </div>
+
+        <div class="feature-box">
+            <h2>Why choose Seesaw Diary?</h2>
+            <ul class="feature-list">
+                <li><strong>Direct Google Drive Sync:</strong> Your diary entries are saved directly to your personal Google Drive. We do not store your private thoughts on our servers.</li>
+                <li><strong>Complete Privacy:</strong> Because data is stored in your own Google account, you maintain 100% control and ownership of your data at all times.</li>
+                <li><strong>Seamless Access:</strong> Simply sign in securely with your Google Account and start writing. No extra passwords to remember.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            <a href="/privacy.html">Privacy Policy</a> | 
+            <a href="/terms.html">Terms of Service</a>
+        </p>
+        <p>&copy; 2026 ToyApps. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
