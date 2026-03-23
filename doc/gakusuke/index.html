@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ガクスケ | School Print to Google Calendar</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --primary: #3b82f6;
+      --primary-soft: #dbeafe;
+      --border: #dbe3f0;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #eef4ff 0%, var(--bg) 40%, #ffffff 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .hero {
+      padding: 48px 0 24px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(2.3rem, 6vw, 4rem);
+      line-height: 1.15;
+      margin: 0;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 18px auto 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin: 32px 0;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 16px 40px rgba(59, 130, 246, 0.08);
+    }
+
+    .card h2, .card h3 {
+      margin-top: 0;
+    }
+
+    .scope-list, .feature-list, .link-list {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .scope-list li, .feature-list li, .link-list li {
+      margin-bottom: 12px;
+    }
+
+    .cta {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid var(--border);
+      color: var(--text);
+      background: white;
+    }
+
+    .button.primary {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    footer {
+      padding: 20px 0 48px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <div class="badge">ガクスケ · Gakusuke</div>
+      <h1>Turn school handouts into a family schedule.</h1>
+      <p>
+        ガクスケ helps parents and students photograph school prints, extract schedule information with AI,
+        and register the results in Google Calendar. When the AI returns a map or other reference image,
+        the app can also save that image to the user's Google Drive.
+      </p>
+      <div class="cta">
+        <a class="button primary" href="privacy.html">Privacy Policy</a>
+        <a class="button" href="terms.html">Terms of Service</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>What the app does</h2>
+        <ul class="feature-list">
+          <li>Photographs printed school notices, letters, and schedules with the device camera.</li>
+          <li>Uses AI to identify dates, times, events, reminders, and other schedule details.</li>
+          <li>Creates Google Calendar events so families can manage school schedules more easily.</li>
+          <li>Saves AI-returned map or guide images to Google Drive only when that output exists and the feature is used.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Google data access used</h2>
+        <ul class="scope-list">
+          <li><strong>Google Calendar:</strong> create app-created calendar events, read calendar list information, and manage related calendar access settings needed for event registration.</li>
+          <li><strong>Google Drive (drive.file):</strong> create and manage only the files created or opened by ガクスケ for saved AI output images.</li>
+          <li><strong>Generative Language / Gemini scopes:</strong> use the user's available Google AI quota and related read-only tuning access required by the app's AI analysis workflow.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Scope review summary</h2>
+        <p>
+          Based on the provided consent screen screenshot, the app requests access only for the Google APIs needed to
+          analyze school prints, create calendar entries, and save AI-generated reference images to Drive. The screenshot
+          shows that basic profile scopes such as email and profile are not selected.
+        </p>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Policy pages</h2>
+      <ul class="link-list">
+        <li><a href="privacy.html">Privacy Policy</a> — explains what data is accessed, how it is used, and deletion options.</li>
+        <li><a href="terms.html">Terms of Service</a> — explains service conditions, user responsibilities, and AI limitations.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>These pages are provided to support Google API / OAuth review for ガクスケ.</p>
+      <p><a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+    </footer>
+  </div>
+</body>
+</html>
