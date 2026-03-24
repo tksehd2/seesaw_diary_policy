@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ガクスケ (Gakusuke) helps parents convert school prints into Google Calendar events using AI.">
   <title>ガクスケ | School Print to Google Calendar</title>
   <style>
     :root {
@@ -112,6 +113,11 @@
       border: 1px solid var(--border);
       color: var(--text);
       background: white;
+      transition: all 0.2s ease;
+    }
+
+    .button:hover {
+      background: var(--bg);
     }
 
     .button.primary {
@@ -120,11 +126,18 @@
       border-color: var(--primary);
     }
 
+    .button.primary:hover {
+      background: #2563eb;
+    }
+
     footer {
       padding: 20px 0 48px;
       text-align: center;
       color: var(--muted);
       font-size: 0.95rem;
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+      padding-top: 30px;
     }
 
     footer a {
@@ -133,6 +146,10 @@
       font-weight: 600;
     }
 
+    .footer-contact {
+      margin-top: 12px;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
@@ -192,7 +209,13 @@
 
     <footer>
       <p>These pages are provided to support Google API / OAuth review for ガクスケ.</p>
-      <p><a href="/gakusuke">Home</a> · <a href="/gakusuke/privacy.html">Privacy</a> · <a href="/gakusuke/terms.html">Terms</a></p>
+      <p>
+        <a href="/gakusuke">Home</a> · 
+        <a href="/gakusuke/privacy.html">Privacy</a> · 
+        <a href="/gakusuke/terms.html">Terms</a>
+      </p>
+      <p class="footer-contact">Contact Support: <a href="mailto:tksehd2@gmail.com">tksehd2@gmail.com</a></p>
+      <p>&copy; 2026 ガクスケ. All rights reserved.</p>
     </footer>
   </div>
 </body>
