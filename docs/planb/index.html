@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plan B helps you save backup choices with photos, images, and text for the times your usual option is unavailable.">
+  <title>Plan B | Your Personal Backup Choice Archive</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f5ff;
+      --card: #ffffff;
+      --text: #23233d;
+      --muted: #5c6184;
+      --primary: #4f46e5;
+      --primary-soft: #e3e5ff;
+      --border: #d9ddfb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #eef1ff 0%, var(--bg) 45%, #e8ebff 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .hero {
+      padding: 56px 0 28px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.2rem, 6vw, 3.8rem);
+      line-height: 1.15;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 18px auto 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .cta {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button.primary {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin: 28px 0;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 14px 30px rgba(79, 70, 229, 0.10);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    .feature-list, .link-list {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .feature-list li, .link-list li {
+      margin-bottom: 12px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 28px 0 48px;
+      text-align: center;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <div class="badge">Plan B</div>
+      <h1>Your personal archive for backup choices.</h1>
+      <p>
+        Plan B is an app for saving the next best option when your usual choice is unavailable.
+        You can store photos, images, and text together so your backup options are easy to revisit later.
+      </p>
+      <p>
+        Saved content can be backed up to and restored from Google Drive,
+        and the app also includes a polished screenshot feature for sharing.
+      </p>
+      <div class="cta">
+        <a class="button primary" href="privacy_policy.html">Privacy Policy</a>
+        <a class="button" href="terms.html">Terms of Service</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Key Features</h2>
+        <ul class="feature-list">
+          <li>Save backup choices with photos, images, and text in one place.</li>
+          <li>Keep personal reference entries that are easy to compare and reuse.</li>
+          <li>Create clean screenshots for sharing saved items with others.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Backup and Restore</h2>
+        <ul class="feature-list">
+          <li>Back up saved entries to Google Drive.</li>
+          <li>Restore your data after reinstalling the app or moving to a new device.</li>
+          <li>Keep useful alternatives available for future reference.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>Policy Pages</h2>
+      <ul class="link-list">
+        <li><a href="privacy_policy.html"><strong>Privacy Policy</strong></a> - explains how data is handled and stored.</li>
+        <li><a href="terms.html"><strong>Terms of Service</strong></a> - explains service conditions and user responsibilities.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>
+        <a href="index.html">Home</a> ·
+        <a href="privacy_policy.html">Privacy</a> ·
+        <a href="terms.html">Terms</a>
+      </p>
+      <p>&copy; 2026 ToyApps. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
