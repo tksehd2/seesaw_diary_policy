@@ -100,6 +100,7 @@
       border-radius: 20px;
       padding: 24px;
       box-shadow: 0 14px 30px rgba(79, 70, 229, 0.10);
+      margin-bottom: 20px; /* 카드 간격 추가 */
     }
 
     .card h2 {
@@ -114,6 +115,14 @@
 
     .feature-list li, .link-list li {
       margin-bottom: 12px;
+    }
+
+    /* 추가된 서포트 이메일 링크 스타일 */
+    .support-email {
+      color: var(--primary);
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1em;
     }
 
     footer {
@@ -178,9 +187,16 @@
       </ul>
     </section>
 
+    <section class="card">
+      <h2>Contact & Support</h2>
+      <p>If you have any questions, need help with Plan B, or want to report a bug, we're here to help.</p>
+      <p>Email us at: <a href="mailto:tksehd2@gmail.com" class="support-email">tksehd2@gmail.com</a></p>
+    </section>
+
     <footer>
       <p>
         <a href="planb/">Home</a> ·
+        <a href="mailto:tksehd2@gmail.com">Support</a> ·
         <a href="planb/privacy_policy.html">Privacy</a> ·
         <a href="planb/terms.html">Terms</a>
       </p>
